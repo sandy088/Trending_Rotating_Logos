@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RotatingLogos</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+          .circle_animation {
+             animation: spin 55s linear infinite;
+          }
+
+          @keyframes spin {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+          }
+
+          .circle_reverse{
+            animation: spinReverse 28s linear infinite;
+          }
+
+          @keyframes spinReverse {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(-360deg);
+            }
+          }
+
+          .circle_reverse-icon{
+            animation: spinReverse 55s linear infinite reverse;
+            
+          }
+
+          .circle_reverse_icon_main{
+            animation: spin 55s linear infinite reverse;
+          }
+
+    </style>
+</head>
+<body>
+
+    <div class="flex w-screen h-screen justify-center items-center relative ">
+
+        <!-- 1st div -->
+        <div class="relative flex rounded-full bg-white h-72 w-72 place-content-center animation: circle_animation  border-2 border-purple-100">
+            <div class="h-20 w-20 absolute block m-0 bottom-[15px] -left-2 animation: circle_reverse_icon_main p-0">
+                <img src="./images/amazon.webp" alt="" class=" min-w-[100%] min-h-[100%] scale-[2]">
+            </div>
+            
+            <div class="h-20 w-20 absolute block m-0 -top-8 animation: circle_reverse_icon_main ">
+                <img src="./images/microsoftIcon.webp" alt="" class="scale-[2]">
+            </div>
+            <div class="h-20 w-20 absolute block m-0 top-5 -right-3 animation: circle_reverse_icon_main">
+                <img src="./images/metaIcon.webp" alt="" class="scale-[2]">
+            </div>
+            
+            <div class="h-20 w-20 absolute block m-0 -right-2 bottom-[15px] animation: circle_reverse_icon_main">
+                <img src="./images/google.webp" alt="" class="scale-[2]">
+            </div>
+
+            <div class="h-20 w-20 absolute block m-0 -bottom-10 animation: circle_reverse_icon_main">
+                <img src="./images/netwlix.webp" alt="" class="scale-[2]">
+            </div>
+            
+            <div class="h-20 w-20 absolute block m-0 top-5 -left-3 animation: circle_reverse_icon_main object-fit">
+                <img src="./images/apple.webp" alt="" class="scale-[2]">
+            </div>
+            
+
+            <!-- 2nd div -->
+            <div class=" bg-purple-100 h-[70%] w-[70%] rounded-full relative my-auto flex">
+                
+
+                <!-- 3rd div -->
+
+                <div class=" bg-white h-[60%] w-[60%] rounded-full relative my-auto mx-auto flex animation: circle_reverse">
+                    <div class="h-20 w-20 absolute block m-0 -bottom-[18%] -left-[15%] animation: circle_reverse-icon">
+                        <img src="./images/OlaIcon.webp" alt="" class="scale-[1.75]">
+                    </div>
+                    
+                    <div class="h-20 w-20 absolute block m-0 -top-[18%] -left-[15%] animation: circle_reverse-icon">
+                        <img src="./images/adobeIcon.webp" alt="" class="scale-[1.75]">
+                    </div>
+                    <div class="h-20 w-20 absolute block m-0 -top-[18%] -right-[15%] animation: circle_reverse-icon">
+                        <img src="./images/flipkartIcon.webp" alt="" class="scale-[1.75]">
+                    </div>
+                    
+                    <div class="h-20 w-20 absolute block m-0 -right-[15%] -bottom-[18%] animation: circle_reverse-icon">
+                        <img src="./images/LinkedinIcon.webp" alt="" class="scale-[1.75]">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
